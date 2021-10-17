@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { getRoutes } from './lib/getRoutes';
+
 
 function App() {
+  // console.log(getStationLine("City Park"));
+  // console.log(changeLine("GREEN"));
+  // console.log(getNextStations("Welcome"));
+
+  const currentStation = "Rajiv Chowk";
+  const destination = "Mandi House";
+
+  getRoutes(currentStation, destination);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
