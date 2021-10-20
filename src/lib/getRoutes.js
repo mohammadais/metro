@@ -6,7 +6,7 @@ import { getStationLines } from '../store/stationLine';
 
 const solve = (path, currentLine, visitedLines) => {
   path.push(currentLine);
-  console.log(path);
+  // console.log(path);
   console.log(visitedLines);
 }
 
@@ -30,6 +30,5 @@ export const getRoutes = (currentStation, destination) => {
   // currentLines.forEach(currentLine => {
   //   getIntermediateLines(linePath, currentLine, destination, visitedLines);
   // });
-  // console.log(linePath);
   // console.log(totalLinePaths);
 }
